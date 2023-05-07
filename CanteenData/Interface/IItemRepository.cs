@@ -1,12 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CanteenData.ViewModel.ViewModelList;
+using CanteenData.Views.ViewModel;
 
 namespace CanteenData.Interface
 {
-	internal interface IItemRepository
+	public interface IItemRepository
 	{
+		public ItemListViewModel GetAllItem(ItemListViewModel objModel);
+		public ItemViewModel GetItemByID(int id);
+		public ItemViewModel AddItem(ItemViewModel newitem);
+		public ItemViewModel EditItem(ItemViewModel edititem);
+		public ItemViewModel DeleteItem(int id);
 	}
 }

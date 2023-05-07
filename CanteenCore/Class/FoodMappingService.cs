@@ -1,6 +1,8 @@
-﻿namespace CanteenCore.Class
+﻿using CanteenCore.Interface;
+
+namespace CanteenCore.Class
 {
-	public class FoodMappingService
+	public class FoodMappingService : IFoodMappingService
 	{
 	}
 }

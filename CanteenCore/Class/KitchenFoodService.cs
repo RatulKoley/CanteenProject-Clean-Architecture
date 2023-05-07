@@ -1,6 +1,8 @@
-﻿namespace CanteenCore.Class
+﻿using CanteenCore.Interface;
+
+namespace CanteenCore.Class
 {
-	public class KitchenFoodService
+	public class KitchenFoodService : IKitchenFoodService
 	{
 	}
 }

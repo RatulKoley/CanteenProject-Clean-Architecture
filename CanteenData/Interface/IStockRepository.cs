@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CanteenData.Interface
+﻿namespace CanteenData.Interface
 {
-	internal interface IStockRepository
+	public interface IStockRepository
 	{
 	}
 }

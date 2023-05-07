@@ -1,6 +1,9 @@
-﻿namespace CanteenCore.Class
+﻿using CanteenCore.Interface;
+
+namespace CanteenCore.Class
 {
-	public class PurchaseService
+	public class PurchaseService : IPurchaseService
+
 	{
 	}
 }

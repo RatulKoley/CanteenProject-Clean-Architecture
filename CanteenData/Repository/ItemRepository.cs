@@ -14,7 +14,7 @@ namespace CanteenData.Repository
 		{
 			_con = con;
 		}
-		public ItemListViewModel GetAllItem(ItemListViewModel objModel)
+		public ItemListViewModel GetAllItem()
 		{
 			var ItemData = _con.Item.Include(test => test.Stock).Include(test => test.Purchase)
 			.Include(test => test.FoodMapping).ToList();
@@ -31,7 +31,7 @@ namespace CanteenData.Repository
 			{
 				newitem.itemmodel = result;
 			}
-			return newitem;
+			return newitem;  //massage item not found
 		}
 		public ItemViewModel AddItem(ItemViewModel newitem)
 		{
@@ -39,7 +39,7 @@ namespace CanteenData.Repository
 			var result = _con.Unit.Where(test => test.ID == newitem.itemmodel.UnitId).FirstOrDefault();
 			if (result == null)
 			{
-				return justitem;
+				return justitem;  //massage	   //massage	 (unit not found)
 			}
 			Item i1 = new Item();
 			i1.ItemName = newitem.itemmodel.ItemName;
@@ -52,24 +52,26 @@ namespace CanteenData.Repository
 			justitem.itemmodel = i1;
 			return justitem;
 		}
-		public ItemViewModel EditItem(ItemViewModel edititem)
+		public ItemViewModel EditItem(ItemViewModel edititem, int id)
 		{
 			ItemViewModel justitem = new ItemViewModel();
-			var result = _con.Unit.Where(test => test.ID == edititem.itemmodel.UnitId).FirstOrDefault();
-			if (result == null)
+			var result = _con.Item.Where(test => test.ItemCode == id).FirstOrDefault();
+			var unitid = _con.Unit.Where(test => test.ID == edititem.itemmodel.UnitId).FirstOrDefault();
+			if (unitid == null)
 			{
-				return justitem;
+				return justitem;  //massage	 (unit not found)
 			}
-			Item i1 = new Item();
-			i1.ItemCode = edititem.itemmodel.ItemCode;
-			i1.ItemName = edititem.itemmodel.ItemName;
-			i1.Image = edititem.itemmodel.Image;
-			i1.ReorderLevel = edititem.itemmodel.ReorderLevel;
-			i1.IsActive = edititem.itemmodel.IsActive;
-			i1.UnitId = edititem.itemmodel.UnitId;
-			_con.Item.Update(i1);
-			_con.SaveChanges();
-			return edititem;
+			if (result != null)
+			{
+				result.ItemName = edititem.itemmodel.ItemName;
+				result.Image = edititem.itemmodel.Image;
+				result.ReorderLevel = edititem.itemmodel.ReorderLevel;
+				result.IsActive = edititem.itemmodel.IsActive;
+				result.UnitId = edititem.itemmodel.UnitId;
+				_con.Item.Update(result);
+				_con.SaveChanges();
+			}
+			return edititem;  
 		}
 		public ItemViewModel DeleteItem(int id)
 		{
@@ -77,13 +79,13 @@ namespace CanteenData.Repository
 			var result = _con.Item.Where(test => test.ItemCode == id).FirstOrDefault();
 			if (result == null)
 			{
-				return justitem;
+				return justitem;  //massage	  item not found
 			}
 			result.IsActive = false;
 			_con.Item.Update(result);
 			_con.SaveChanges();
 			justitem.itemmodel = result;
-			return justitem;
+			return justitem;  //massage
 		}
 	}
 }

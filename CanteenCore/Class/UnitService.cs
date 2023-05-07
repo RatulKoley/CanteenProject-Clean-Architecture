@@ -12,9 +12,9 @@ namespace CanteenCore.Class
 		{
 			this.IunitRepo = IunitRepo;
 		}
-		public UnitListViewModel GetAllUnit(UnitListViewModel objModel)
+		public UnitListViewModel GetAllUnit()
 		{
-			return this.IunitRepo.GetAllUnit(objModel);
+			return this.IunitRepo.GetAllUnit();
 		}
 		public UnitViewModel GetUnitByID(int id)
 		{

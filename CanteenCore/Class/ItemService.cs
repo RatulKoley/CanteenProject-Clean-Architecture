@@ -12,9 +12,9 @@ namespace CanteenCore.Class
 		{
 			_iitemrepo = iitemrepo;
 		}
-		public ItemListViewModel GetAllItem(ItemListViewModel objModel)
+		public ItemListViewModel GetAllItem()
 		{
-			return _iitemrepo.GetAllItem(objModel);
+			return _iitemrepo.GetAllItem();
 		}
 		public ItemViewModel GetItemByID(int id)
 		{
@@ -24,9 +24,9 @@ namespace CanteenCore.Class
 		{
 			return _iitemrepo.AddItem(newitem);
 		}
-		public ItemViewModel EditItem(ItemViewModel edititem)
+		public ItemViewModel EditItem(ItemViewModel edititem, int id)
 		{
-			return _iitemrepo.EditItem(edititem);
+			return _iitemrepo.EditItem(edititem, id);
 		}
 		public ItemViewModel DeleteItem(int id)
 		{

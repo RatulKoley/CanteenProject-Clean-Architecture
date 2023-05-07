@@ -17,9 +17,9 @@ namespace CanteenWebAPI.Controller
 			_service = service;
 		}
 		[HttpPost("GetList")]
-		public ActionResult<ItemListViewModel> GetAllItem(ItemListViewModel objModel)
+		public ActionResult<ItemListViewModel> GetAllItem()
 		{
-			return _service.GetAllItem(objModel);
+			return _service.GetAllItem();
 		}
 		[HttpPost("GetItem/{id:int}")]
 		public ActionResult<ItemViewModel> GetItemByID(int id)
@@ -31,10 +31,10 @@ namespace CanteenWebAPI.Controller
 		{
 			return _service.AddItem(newitem);
 		}
-		[HttpPut("EditItem")]
-		public ActionResult<ItemViewModel> EditItem(ItemViewModel edititem)
+		[HttpPut("EditItem/{id:int}")]
+		public ActionResult<ItemViewModel> EditItem(ItemViewModel edititem, int id)
 		{
-			return _service.EditItem(edititem);
+			return _service.EditItem(edititem, id);
 		}
 		[HttpDelete("DeleteItem/{id:int}")]
 		public ActionResult<ItemViewModel> DeleteItem(int id)

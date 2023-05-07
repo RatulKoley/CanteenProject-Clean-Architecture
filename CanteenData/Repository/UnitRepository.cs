@@ -17,7 +17,7 @@ namespace CanteenData.Repository
 			//this.con = DBContext.Create();
 			this.con = con;
 		}
-		public UnitListViewModel GetAllUnit(UnitListViewModel objModel)
+		public UnitListViewModel GetAllUnit()
 		{
 			var UnitData = con.Unit.Include(test => test.Item).ToList();
 			UnitListViewModel allunit = new UnitListViewModel();

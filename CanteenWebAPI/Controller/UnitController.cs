@@ -20,9 +20,9 @@ namespace CanteenWebAPI.Controller
 
 
 		[HttpPost("GetList")]
-		public ActionResult<UnitListViewModel> GetAllUnit(UnitListViewModel objModel)
+		public ActionResult<UnitListViewModel> GetAllUnit()
 		{
-			return _iunitservice.GetAllUnit(objModel);
+			return _iunitservice.GetAllUnit();
 		}
 		[HttpPost("GetList/{id:int}")]
 		public ActionResult<UnitViewModel> GetUnitByID(int id)

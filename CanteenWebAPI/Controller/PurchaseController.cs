@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace CanteenWebAPI.Controller
 {
 	[EnableCors("AllowOrigin")]
-	[Route("api/[controller]")]
+	[Route("[controller]")]
 	[ApiController]
 	public class PurchaseController : ControllerBase
 	{

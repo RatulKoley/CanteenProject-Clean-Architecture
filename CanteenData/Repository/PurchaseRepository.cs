@@ -198,6 +198,7 @@ namespace CanteenData.Repository
 				}
 			}
 			con.SaveChanges();
+			justpurchase.purchasemodel = result;
 			return justpurchase;   //massage
 		}
 	}

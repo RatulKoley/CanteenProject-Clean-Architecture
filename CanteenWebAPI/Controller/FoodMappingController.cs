@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CanteenWebAPI.Controller
 {
-	[Route("api/[controller]")]
+	[Route("[controller]")]
 	[ApiController]
 	public class FoodMappingController : ControllerBase
 	{

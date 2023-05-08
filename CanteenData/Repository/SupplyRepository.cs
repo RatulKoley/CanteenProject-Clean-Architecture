@@ -29,7 +29,7 @@ namespace CanteenData.Repository
 			{
 				newsupplier.supplymodel = result;
 			}
-			return newsupplier; //massage
+			return newsupplier; //massage 
 		}
 		public SupplyViewModel AddSupply(SupplyViewModel newsupply)
 		{

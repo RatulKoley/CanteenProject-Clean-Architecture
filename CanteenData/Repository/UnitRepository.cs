@@ -2,7 +2,7 @@
 using CanteenData.Context;
 using CanteenData.Interface;
 using CanteenData.Model;
-using CanteenData.ViewModel.ViewModelList;
+using CanteenData.Views.ListViewModel;
 using CanteenData.Views.ViewModel;
 using Microsoft.EntityFrameworkCore;
 

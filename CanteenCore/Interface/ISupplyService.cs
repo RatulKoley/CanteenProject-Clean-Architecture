@@ -1,4 +1,4 @@
-﻿using CanteenData.ViewModel.ViewModelList;
+﻿using CanteenData.Views.ListViewModel;
 using CanteenData.Views.ViewModel;
 
 namespace CanteenCore.Interface

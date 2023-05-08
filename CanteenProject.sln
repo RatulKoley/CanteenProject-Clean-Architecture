@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanteenWebAPI", "CanteenWebAPI\CanteenWebAPI.csproj", "{230E8731-4103-4770-8AE1-95F0D3D8FA8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CanteenWebAPI", "CanteenWebAPI\CanteenWebAPI.csproj", "{230E8731-4103-4770-8AE1-95F0D3D8FA8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanteenCore", "CanteenCore\CanteenCore.csproj", "{85892702-DAE7-44F1-A0CD-4E950935D2C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CanteenCore", "CanteenCore\CanteenCore.csproj", "{85892702-DAE7-44F1-A0CD-4E950935D2C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CanteenData", "CanteenData\CanteenData.csproj", "{892E483C-52E2-4FCF-8BE6-A4B694CD58B7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CanteenData", "CanteenData\CanteenData.csproj", "{892E483C-52E2-4FCF-8BE6-A4B694CD58B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,5 +1,5 @@
 ﻿using CanteenCore.Interface;
-using CanteenData.ViewModel.ViewModelList;
+using CanteenData.Views.ListViewModel;
 using CanteenData.Views.ViewModel;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;

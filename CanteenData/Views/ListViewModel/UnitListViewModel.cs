@@ -1,6 +1,6 @@
 ﻿using CanteenData.Model;
 
-namespace CanteenData.ViewModel.ViewModelList
+namespace CanteenData.Views.ListViewModel
 {
 	public class UnitListViewModel
 	{

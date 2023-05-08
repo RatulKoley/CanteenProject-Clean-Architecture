@@ -72,6 +72,7 @@ namespace CanteenData.Repository
 			result.IsActive = false;
 			con.Supply.Update(result);
 			con.SaveChanges();
+			justsupply.supplymodel = result;
 			return justsupply;   //massage
 		}
 

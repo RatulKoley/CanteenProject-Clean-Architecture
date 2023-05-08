@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CanteenCore", "CanteenCore\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CanteenData", "CanteenData\CanteenData.csproj", "{892E483C-52E2-4FCF-8BE6-A4B694CD58B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScaffoldDatabase", "ScaffoldDatabase\ScaffoldDatabase.csproj", "{11450522-403B-4B28-826D-B3C4D2592128}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{892E483C-52E2-4FCF-8BE6-A4B694CD58B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{892E483C-52E2-4FCF-8BE6-A4B694CD58B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{892E483C-52E2-4FCF-8BE6-A4B694CD58B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11450522-403B-4B28-826D-B3C4D2592128}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11450522-403B-4B28-826D-B3C4D2592128}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11450522-403B-4B28-826D-B3C4D2592128}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11450522-403B-4B28-826D-B3C4D2592128}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

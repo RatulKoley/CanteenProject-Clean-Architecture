@@ -3,6 +3,7 @@ using CanteenCore.Interface;
 using CanteenData.Context;
 using CanteenData.Interface;
 using CanteenData.Repository;
+using CanteenData.Views.ListViewModel;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -71,6 +72,7 @@ if (app.Environment.IsDevelopment())
 	app.UseCors(options => options.AllowAnyOrigin());
 	app.UseEndpoints(endpoints => endpoints.MapControllers());
 }
+
 
 
 app.Run();
